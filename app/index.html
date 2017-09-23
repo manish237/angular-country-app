@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="en" ng-app="cacApp">
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>Countries and Capitals</title>
+        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <!--<link href="stylesheets/jumbotron.css" rel="stylesheet">-->         
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Sedgwick+Ave|Noto+Serif|Oxygen:300|Bitter|PT+Sans:400i" rel="stylesheet"> 
+        <link href="cac-style.css" rel="stylesheet" type="text/css">
+    </head>     
+    <body>
+        <div class="container-fluid" id="main-container">
+            <div class="text-center" id="wf-head-row">
+                <h2 id="wf-head-text">Countries and Capitals</h2>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 text-center" ng-view></div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        <script src="bower_components/angular/angular.js" type="text/javascript"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script  src="bower_components/angular-animate/angular-animate.js"></script>
+        <script src="./bower_components/angularjs-geolocation/dist/angularjs-geolocation.min.js"></script>
+        <script src="./bower_components/jquery/dist/jquery.js"></script>
+        <script src="./bower_components/underscore/underscore.js"></script>
+        <script src="./cac-api-library.js"></script>
+        <script src="./cac-app-views.js"></script>
+        <script src="./cac-app.js"></script>
+        <script src="./browse/browse.js"></script>
+        <script src="./details/details.js"></script>
+        <script src="./home/home.js"></script>
+    </body>
+</html>

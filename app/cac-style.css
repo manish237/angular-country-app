@@ -1,0 +1,66 @@
+body {
+  background-color: white;
+}
+
+#p-home-desc{
+  text-align: left;
+}
+.button {
+  background-color:  #99adff; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:10px;
+  /*margin: 4px 2px;*/
+  cursor: pointer;
+  width: 10em;
+  height: 3em;
+  /*box-shadow: 0 1em 2em 0 rgba(0,0,0,0.2), 0 1em 3em 0 rgba(0,0,0,0.19);*/
+  border-radius: 1em;
+  font-family: 'Quicksand', sans-serif;;
+  /*vertical-align: middle;*/
+}
+
+tr {
+  width: 100%;
+  display: inline-table;
+}
+
+table{
+  height:50em;
+}
+th{
+  text-align: left;
+  width:16%;
+}
+tbody{
+  overflow-y: scroll;
+  height: 40em;
+  width: 100%;
+  position: absolute;
+}
+
+td{
+  width:16%;
+  text-align: left;
+}
+
+#btn-list{
+  margin-top: -1em;
+}
+
+#img-row{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#btn-det-browse{
+  margin-left: 1em;
+}
+/*
+
+td-cntry-info{
+  text-align: left;
+}*/

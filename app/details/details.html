@@ -1,0 +1,71 @@
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 text-left">
+        <H1>{{countryName}}</H1>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3 text-right">
+        <H6 id="cntry-det-pop-head">Population of Country:</H6>
+    </div>
+    <div class="col-md-3 text-left">
+        <H6 id="cntry-det-pop-text" class="info-text">{{population|number}}</H6>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3 text-right">
+        <H6 id="cntry-det-area-head">Area:</H6>
+    </div>
+    <div class="col-md-3 text-left">
+        <H6 id="cntry-det-area-text" class="info-text">{{areaInSqKm}}</H6>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3 text-right">
+        <H6 id="cntry-det-cap-head">Capital:</H6>
+    </div>
+    <div class="col-md-3 text-left">
+        <H6 id="cntry-det-cap-text" class="info-text">{{capital}}</H6>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3 text-right">
+        <H6 id="cntry-det-cap-pop-head">Population of Capital:</H6>
+    </div>
+    <div class="col-md-3 text-left">
+        <H6 id="cntry-det-cap-pop-text" class="info-text">{{capPopulation|number}}</H6>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3 text-right">
+        <H6 id="cntry-det-nb-head">3 neighbours:</H6>
+    </div>
+    <div class="col-md-3 text-left">
+        <span ng-repeat="country in countries" class="cntry-det-text"><a ng-click="showDetails(country.countryCode,country.capital,country.geonameId,country.population,country.areaInSqKm,country.countryName)">[{{country.countryName}}]</a>&nbsp;</span>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+<div class="row" id="img-row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3 text-center"><img src="http://www.geonames.org/img/country/250/{{countryCode}}.png" id="img-cntry-map" width="200px" height="100px"/></div>
+    <div class="col-md-3 text-center"><img src="http://www.geonames.org/flags/x/{{smallCode}}.gif" id="img-cntry-flag" width="200px" height="100px"/></div>
+    <div class="col-md-3"></div>
+</div>
+<div class="row" id="btn-row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 text-center">
+        <button class="button" id="btn-det-home" ng-click="go('/')">Home</button>
+        <button class="button" id="btn-det-browse" ng-click="go('/countries')">Browse Countries</button>
+    </div>
+    <div class="col-md-3"></div>
+</div>

@@ -1,0 +1,20 @@
+{
+  "name": "ttc-app",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-animate": "^1.6.6",
+    "angular-route": "^1.6.6",
+    "jquery": "~3.2.1",
+    "gumby": "~2.6.3",
+    "underscore": "~1.6.0",
+    "angularjs-geolocation": "~0.1.1",
+    "font-awesome": "~4.1.0",
+    "bootstrap":"^4.0.0"
+  },
+  "resolutions": {
+    "angular": "^1.6.6",
+    "angular-animate": "^1.6.6",
+    "angular-route": "^1.6.6"
+  }
+}
